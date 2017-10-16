@@ -27,8 +27,17 @@
  * @ingroup themeable
  */
 #}
+{%
+set classes = [
+'block',
+'block-' ~ configuration.provider|clean_class,
+'block-' ~ plugin_id|clean_class,
+'tabs-wrapper',
+'clearfix',
+]
+%}
 <!-- block -->
-<div{{ attributes.addClass('tabs-wrapper clearfix') }}>
+<div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
