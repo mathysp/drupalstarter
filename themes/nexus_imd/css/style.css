@@ -1,3 +1,15 @@
 a {
   color: #E73B35;
 }
+
+#block-design {
+  float: left;
+  width: 50%;
+  background: #CCCCCC;
+}
+
+.node--type-teacher.node--view-mode-teaser .group-left,
+.node--type-teacher.node--view-mode-teaser .group-right {
+  float: left;
+  width: 50%;
+}
